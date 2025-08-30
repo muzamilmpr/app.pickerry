@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickerry Apps - Mobile Customization & Widgets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutral with blue accents -->
+    <!-- Application Structure Plan: This page is designed as a pre-launch announcement. The structure is linear and minimalist, guiding the user from an initial brand statement to a clear call-to-action for updates. The hero section is concise and sets the tone. Instead of a product list, a "What We're Building" section briefly describes the future app categories. The "Gallery" is replaced by a single, high-impact image to hint at the brand's aesthetic without showcasing specific, non-existent products. An "About Us" section builds trust, and the page concludes with a strong, simple call-to-action to connect via social media, as an email list is not yet in place. This structure effectively manages user expectations and funnels all interest to a single point of contact. -->
+    <!-- Visualization & Content Choices: The content is entirely informational, so no data visualizations are included. The visual design relies on a clean, responsive layout created with Tailwind CSS. The primary visual is a single placeholder image in the hero section to convey a sense of modern design. Social media icons use Unicode characters for simplicity and to avoid external assets. The lack of interactive elements like accordions or galleries simplifies the page's code and user journey, making it a straightforward and elegant announcement. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #f0f4f8, #e0e7ee);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900">Pickerry Apps</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#building" class="text-gray-600 hover:text-blue-600 font-medium transition">What's Next</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-bg relative overflow-hidden pt-20 pb-32 md:pt-32 md:pb-48 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    Your Device, Your Design
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    We are crafting beautiful and functional customization apps to make your mobile experience uniquely yours.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105">
+                        Get Notified
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="building" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">What We're Building</h2>
+                <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+                    We are currently hard at work creating a suite of high-quality mobile apps designed to give you full control over your home screen aesthetic. Our first creations will include:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 border rounded-lg shadow-sm bg-gray-50">
+                        <span class="text-6xl mb-4 block">&#x1F551;</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">KWGT Widget Packs</h3>
+                        <p class="text-gray-600">Dynamic and minimalist widgets to fit any style, from clocks and calendars to weather and data dashboards.</p>
+                    </div>
+                    <div class="p-6 border rounded-lg shadow-sm bg-gray-50">
+                        <span class="text-6xl mb-4 block">&#x1F3A8;</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Icon Packs</h3>
+                        <p class="text-gray-600">Meticulously crafted icons that provide a clean, unified, and professional look across all your apps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                         <img src="https://placehold.co/600x400/F0F4F8/3B82F6?text=Our+Mission" alt="An illustration of a team working on a design." class="h-full w-full object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Pickerry Apps is a passionate team dedicated to redefining mobile personalization. We believe that your device should be a true reflection of your personality and style. Our mission is to provide high-quality, thoughtfully designed apps that empower you to customize your digital life effortlessly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stay in the Loop</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Follow us to be the first to know when our apps are released.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://twitter.com/pickerry" target="_blank" class="text-gray-500 hover:text-blue-600 transition" aria-label="Twitter">
+                        <span class="text-3xl">&#x1F426;</span>
+                    </a>
+                    <a href="https://instagram.com/pickerry" target="_blank" class="text-gray-500 hover:text-blue-600 transition" aria-label="Instagram">
+                        <span class="text-3xl">&#x1F4F7;</span>
+                    </a>
+                    <a href="mailto:contact@pickerry.com" class="text-gray-500 hover:text-blue-600 transition" aria-label="Email">
+                        <span class="text-3xl">&#x2709;&#xFE0F;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-8 border-t border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+            <p>&copy; 2025 Pickerry LLC. All rights reserved.</p>
+            <p class="mt-2"><a href="#" class="hover:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('header nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
